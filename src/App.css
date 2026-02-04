@@ -1,38 +1,126 @@
-.App {
-  text-align: center;
+/* src/App.css */
+
+:root {
+  --primary: #232f3e;
+  --accent: #ff9900;
+  --amazon-yellow: #ffd814;
+  --price-red: #B12704;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f0f2f2;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.zelular-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* Navbar */
+.navbar {
+  background-color: var(--primary);
+  padding: 15px 5%;
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.logo { color: var(--accent); font-weight: bold; font-size: 1.5rem; }
+
+/* Busca */
+.search-box {
+  width: 100%;
+  max-width: 500px;
+  padding: 12px 20px;
+  margin: 20px auto;
+  display: block;
+  border: 2px solid #ddd;
+  border-radius: 25px;
+  font-size: 1rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Filtros */
+.filtros-lista {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 30px;
+  flex-wrap: wrap;
 }
+
+.btn-filtro {
+  padding: 8px 18px;
+  border: 1px solid var(--primary);
+  background: white;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.btn-filtro.active {
+  background: var(--primary);
+  color: white;
+}
+
+/* Grid */
+.grid-acessorios {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.card {
+  background: white;
+  padding: 15px;
+  border-radius: 8px;
+  border: 1px solid #e7e7e7;
+  text-align: center;
+  transition: 0.2s;
+}
+
+.card:hover { border-color: var(--accent); }
+
+.card img {
+  width: 100%;
+  height: 150px;
+  object-fit: contain;
+}
+
+.card h3 { font-size: 1rem; height: 40px; overflow: hidden; margin: 10px 0; }
+
+.card .preco {
+  color: var(--price-red);
+  font-size: 1.3rem;
+  font-weight: bold;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.btn-link {
+  background: var(--amazon-yellow);
+  color: black;
+  text-decoration: none;
+  padding: 10px;
+  display: block;
+  border-radius: 20px;
+  font-weight: bold;
+  font-size: 0.9rem;
+}
+
+.detalhes-flex {
+  display: flex;
+  gap: 40px;
+  background: white;
+  padding: 30px;
+  border-radius: 15px;
+  margin-top: 20px;
+  flex-wrap: wrap;
+}
+
+.detalhes-imagem { flex: 1; min-width: 300px; }
+.detalhes-imagem img { width: 100%; max-height: 400px; object-fit: contain; }
+.detalhes-info { flex: 1; min-width: 300px; text-align: left; }
+.descricao { margin: 20px 0; line-height: 1.6; color: #555; }

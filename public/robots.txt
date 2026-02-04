@@ -1,3 +1,5 @@
-# https://www.robotstxt.org/robotstxt.html
 User-agent: *
-Disallow:
+Allow: /
+
+# Indica onde o Google pode encontrar o mapa completo do site
+Sitemap: https://seu-site-no-netlify.netlify.app/sitemap.xml
