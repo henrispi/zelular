@@ -1,26 +1,26 @@
 export const produtos = [
   {
     id: 1,
-    nome: "Carregador Anker Nano 20W",
+    nome: "Geonav Carregador Universal Ultra Rápido Duo, 1 X USB-C Power Delivery 20W, 1 X USB Quick Charge 18W, CH20PDQC, Branco",
     categoria: "Carregadores",
-    preco: "89,90",
-    imagem: "https://m.media-amazon.com/images/I/image-exemplo.jpg",
-    link: "https://amazon.com.br/seu-link-afiliado-1"
+    preco: "41,00",
+    imagem: "https://m.media-amazon.com/images/I/51iu2xucARL._AC_SL1500_.jpg",
+    link: "https://www.amazon.com.br/gp/aw/d/B08ZBK7Q8N/"
   },
   {
     id: 2,
-    nome: "Capa Silicone iPhone 15",
+    nome: "Apple Capa de silicone com MagSafe para iPhone 14 –Meia-noite",
     categoria: "Capas",
-    preco: "45,00",
-    imagem: "https://m.media-amazon.com/images/I/image-exemplo-2.jpg",
-    link: "https://amazon.com.br/seu-link-afiliado-2"
+    preco: "149,90",
+    imagem: "https://m.media-amazon.com/images/I/51cYSAVi1wL._AC_SL1500_.jpg",
+    link: "https://www.amazon.com.br/Apple-Capa-silicone-MagSafe-iPhone-14-Meia-noite/dp/B0BDHM8S23/"
   },
   {
     id: 3,
-    nome: "Fone Bluetooth JBL Tune",
+    nome: "JBL, Fone de Ouvido On ear, Headphone, Tune 520BT, Sem Fio - Preto",
     categoria: "Áudio",
-    preco: "250,00",
-    imagem: "https://m.media-amazon.com/images/I/image-exemplo-3.jpg",
-    link: "https://amazon.com.br/seu-link-afiliado-3"
+    preco: "234,44",
+    imagem: "https://m.media-amazon.com/images/I/51olNZRjn+L._AC_SL1500_.jpg",
+    link: "https://www.amazon.com.br/JBL-Fone-Ouvido-Tune-520BT/dp/B0C3V5X3QT/"
   }
 ];
